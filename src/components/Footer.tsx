@@ -29,13 +29,25 @@ export function Footer() {
             <p className="text-muted">{site.hours.sunday}</p>
           </div>
         </div>
-        <p className="mx-auto w-[min(calc(100%-2rem),1180px)] border-t border-white/10 pt-4 text-sm text-[#7f8791]">
-          © {year} {site.businessName}. All rights reserved.
-        </p>
+        <div className="mx-auto flex w-[min(calc(100%-2rem),1180px)] flex-col gap-2 border-t border-white/10 pt-4 sm:flex-row sm:items-center sm:justify-between">
+          <p className="text-sm text-[#7f8791]">
+            © {year} {site.businessName}. All rights reserved.
+          </p>
+          <a
+            className="w-fit text-[11px] tracking-wide text-[#7f8791]/70 transition-colors hover:text-[#7f8791]"
+            href="https://www.trippworksai.dev/"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            Powered by Tripp Works AI
+          </a>
+        </div>
       </footer>
       <a
-        className="fixed right-3 bottom-3 left-3 z-30 flex min-h-14 items-center justify-between rounded-xl bg-safety px-4 font-extrabold text-ink shadow-2xl md:hidden"
+        className="fixed inset-x-0 bottom-0 z-30 flex min-h-14 items-center justify-between bg-brand px-4 pt-3 font-extrabold text-ink shadow-2xl md:hidden"
+        style={{ paddingBottom: "max(0.75rem, env(safe-area-inset-bottom, 0px))" }}
         href={site.phoneTel}
+        aria-label={`Call ${site.phoneDisplay}`}
       >
         <span className="text-xs uppercase tracking-wider">Tap to call</span>
         <strong>{site.phoneDisplay}</strong>

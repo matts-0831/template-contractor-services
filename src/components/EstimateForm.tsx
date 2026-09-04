@@ -60,7 +60,7 @@ export function EstimateForm() {
             <h2 className="mb-3 text-paper-ink">Thanks — we’ll be in touch.</h2>
             <p className="mb-5">Your estimate request is in. If the job is time-sensitive, call the shop now.</p>
             <a
-              className="inline-flex min-h-14 items-center justify-center rounded-lg bg-safety px-5 py-3 font-extrabold uppercase tracking-wide text-ink hover:bg-safety-2"
+              className="inline-flex min-h-14 items-center justify-center rounded-lg bg-brand px-5 py-3 font-extrabold uppercase tracking-wide text-ink hover:bg-brand-2"
               href={site.phoneTel}
             >
               Call {site.phoneDisplay}
@@ -151,7 +151,7 @@ export function EstimateForm() {
               </p>
             </div>
             <button
-              className="inline-flex min-h-14 w-full items-center justify-center rounded-lg bg-safety px-5 py-3 font-extrabold uppercase tracking-wide text-ink hover:bg-safety-2"
+              className="inline-flex min-h-14 w-full items-center justify-center rounded-lg bg-accent px-5 py-3 font-extrabold uppercase tracking-wide text-ink hover:bg-accent-2"
               type="submit"
             >
               Request Free Quote
