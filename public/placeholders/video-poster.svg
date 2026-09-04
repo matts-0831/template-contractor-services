@@ -2,5 +2,5 @@
   <rect width="1400" height="1050" fill="#252d38"/>
   <rect x="48" y="48" width="1304" height="954" fill="none" stroke="#8d959e" stroke-width="5" stroke-dasharray="16 12"/>
   <text x="700" y="500" text-anchor="middle" fill="#f3efe6" font-family="Arial, sans-serif" font-size="36">Add featured project video/photo</text>
-  <text x="700" y="555" text-anchor="middle" fill="#aeb6c0" font-family="Arial, sans-serif" font-size="20">Optional: /public/videos/featured-project.mp4</text>
+  <text x="700" y="555" text-anchor="middle" fill="#aeb6c0" font-family="Arial, sans-serif" font-size="20">Optional: /videos/featured-project.mp4</text>
 </svg>

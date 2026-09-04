@@ -102,7 +102,7 @@ export const site = {
       "[Caption for equipment, crews, or completed jobs. Replace placeholder media below.]",
     videoLabel: "[Featured Project Title]",
     videoSrc: "",
-    // Add a client clip at /public/videos/featured-project.mp4 and set videoSrc to "/videos/featured-project.mp4"
+    // Add a client clip at /videos/featured-project.mp4 and set videoSrc to "/videos/featured-project.mp4"
     poster: "/placeholders/video-poster.svg",
     gallery: [
       {

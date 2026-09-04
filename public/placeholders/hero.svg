@@ -2,5 +2,5 @@
   <rect width="1920" height="1080" fill="#1c232c"/>
   <rect x="80" y="80" width="1760" height="920" fill="none" stroke="#8d959e" stroke-width="6" stroke-dasharray="18 14"/>
   <text x="960" y="500" text-anchor="middle" fill="#f3efe6" font-family="Arial, sans-serif" font-size="42">Add hero job-site photo</text>
-  <text x="960" y="560" text-anchor="middle" fill="#aeb6c0" font-family="Arial, sans-serif" font-size="24">Replace /public/placeholders/hero.svg with /public/images/hero.jpg</text>
+  <text x="960" y="560" text-anchor="middle" fill="#aeb6c0" font-family="Arial, sans-serif" font-size="24">Replace /placeholders/hero.svg with /images/hero.jpg</text>
 </svg>
