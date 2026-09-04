@@ -46,6 +46,8 @@ export const site = {
       "[Short positioning statement about the crew, specialties, and the type of work you want to win.]",
     primaryCta: "Request a Quote",
     secondaryCta: "View Our Work",
+    underlaySrc: "/placeholders/hero.svg",
+    underlayAlt: "Add a contractor job-site photo here",
     slides: [
       {
         src: "/placeholders/hero.svg",
