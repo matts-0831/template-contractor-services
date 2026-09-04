@@ -3,6 +3,7 @@ import { Barlow, Oswald } from "next/font/google";
 import { LocalBusinessJsonLd } from "@/components/LocalBusinessJsonLd";
 import { getSiteUrl } from "@/lib/seo";
 import { site } from "@/lib/site";
+import { resolveTheme } from "@/lib/theme";
 import "./globals.css";
 
 const barlow = Barlow({
@@ -78,13 +79,18 @@ export async function generateMetadata(): Promise<Metadata> {
 }
 
 export const viewport: Viewport = {
-  themeColor: "#101318",
+  themeColor: resolveTheme(site.themeId).themeColor,
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
+  const theme = resolveTheme(site.themeId);
+  const headerStyle = site.headerStyle || theme.headerStyle;
+
   return (
     <html
       lang="en"
+      data-theme={site.themeId}
+      data-header={headerStyle}
       className={`${barlow.variable} ${oswald.variable} h-full antialiased`}
     >
       <body className="min-h-full bg-ink font-sans text-cream">

@@ -5,8 +5,8 @@ export function Footer() {
 
   return (
     <>
-      <footer className="bg-[#0b0d10] pb-8">
-        <div className="hazard h-1.5" aria-hidden="true" />
+      <footer className="site-footer pb-8">
+        <div className="theme-rule h-1.5" aria-hidden="true" />
         <div className="mx-auto grid w-[min(calc(100%-2rem),1180px)] gap-8 py-10 sm:grid-cols-2 lg:grid-cols-[1.4fr_1fr_1fr]">
           <div>
             <p className="font-display mb-2 text-xl uppercase tracking-wide">{site.businessName}</p>
@@ -29,12 +29,12 @@ export function Footer() {
             <p className="text-muted">{site.hours.sunday}</p>
           </div>
         </div>
-        <div className="mx-auto flex w-[min(calc(100%-2rem),1180px)] flex-col gap-2 border-t border-white/10 pt-4 sm:flex-row sm:items-center sm:justify-between">
-          <p className="text-sm text-[#7f8791]">
+        <div className="mx-auto flex w-[min(calc(100%-2rem),1180px)] flex-col gap-2 border-t border-cream/15 pt-4 sm:flex-row sm:items-center sm:justify-between">
+          <p className="text-sm text-muted">
             © {year} {site.businessName}. All rights reserved.
           </p>
           <a
-            className="w-fit text-[11px] tracking-wide text-[#7f8791]/70 transition-colors hover:text-[#7f8791]"
+            className="w-fit text-[11px] tracking-wide text-muted/70 transition-colors hover:text-muted"
             href="https://www.trippworksai.dev/"
             rel="noopener noreferrer"
             target="_blank"

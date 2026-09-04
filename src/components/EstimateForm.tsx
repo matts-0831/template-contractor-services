@@ -39,13 +39,13 @@ export function EstimateForm() {
   }
 
   return (
-    <section className="bg-linear-to-b from-[#1a130c] to-[#24180e] py-[4.5rem] pb-20" id="estimate">
+    <section className="estimate-band py-[4.5rem] pb-20" id="estimate">
       <div className="mx-auto grid w-[min(calc(100%-2rem),1180px)] gap-8 lg:grid-cols-[1fr_0.92fr]">
         <div>
           <p className="mb-3 text-xs font-bold uppercase tracking-[0.16em] text-safety">{site.estimate.eyebrow}</p>
           <h2 className="mb-4 max-w-[18ch] text-[clamp(1.85rem,4.4vw,3.1rem)]">{site.estimate.heading}</h2>
-          <p className="max-w-[52ch] text-[#d5cbb8]">{site.estimate.lede}</p>
-          <ul className="mt-5 grid gap-3 text-[#d5cbb8]">
+          <p className="max-w-[52ch] text-muted">{site.estimate.lede}</p>
+          <ul className="mt-5 grid gap-3 text-muted">
             {site.estimate.points.map((point) => (
               <li key={point} className="border-l-[3px] border-accent pl-4">
                 {point}
@@ -56,7 +56,7 @@ export function EstimateForm() {
 
         {success ? (
           <div className="rounded-[18px] bg-paper p-5 text-paper-ink shadow-2xl" tabIndex={-1}>
-            <p className="mb-2 text-xs font-bold uppercase tracking-[0.16em] text-[#9a6b00]">Request received</p>
+            <p className="mb-2 text-xs font-bold uppercase tracking-[0.16em] text-brand">Request received</p>
             <h2 className="mb-3 text-paper-ink">Thanks — we’ll be in touch.</h2>
             <p className="mb-5">Your estimate request is in. If the job is time-sensitive, call the shop now.</p>
             <a
@@ -156,9 +156,9 @@ export function EstimateForm() {
             >
               Request Free Quote
             </button>
-            <p className="mt-3 text-center text-sm text-[#5d564b]">
+            <p className="mt-3 text-center text-sm text-muted">
               Prefer the phone?{" "}
-              <a className="font-bold text-[#8a4b00]" href={site.phoneTel}>
+              <a className="font-bold text-brand" href={site.phoneTel}>
                 Call {site.phoneDisplay}
               </a>
             </p>

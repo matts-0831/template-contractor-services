@@ -26,8 +26,8 @@ export function HeroSlideshow({ slides }: { slides: readonly Slide[] }) {
         height={1080}
         fetchPriority="high"
       />
-      <div className="absolute inset-0 bg-linear-to-r from-ink/40 via-ink/15 to-transparent md:from-ink/92 md:via-ink/70 md:to-ink/25" />
-      <div className="absolute inset-0 bg-linear-to-t from-ink to-transparent md:from-ink/80" />
+      <div className="absolute inset-0 bg-linear-to-r from-scrim/40 via-scrim/15 to-transparent md:from-scrim/92 md:via-scrim/70 md:to-scrim/25" />
+      <div className="absolute inset-0 bg-linear-to-t from-scrim to-transparent md:from-scrim/80" />
       {showDots ? (
         <div
           className="absolute inset-x-0 bottom-0 z-2 flex h-[var(--hero-dots-space)] items-center justify-center gap-2"

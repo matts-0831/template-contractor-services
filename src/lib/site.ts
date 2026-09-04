@@ -2,6 +2,8 @@ export const site = {
   businessName: "Your Business Name",
   shortName: "[Contractor Name]",
   tagline: "[Trade / Specialty]",
+  themeId: "charcoal-bronze",
+  headerStyle: "atelier",
   phoneDisplay: "[Phone Number]",
   phoneTel: "tel:+15555550100",
   email: "[email@yourbusiness.com]",

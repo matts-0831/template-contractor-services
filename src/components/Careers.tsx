@@ -22,7 +22,7 @@ export function Careers() {
           {site.careers.roles.map((role, index) => (
             <article
               key={role.title}
-              className="relative rounded-2xl border border-white/10 border-t-4 border-t-accent bg-panel p-5 shadow-2xl"
+              className="relative rounded-2xl border border-cream/15 border-t-4 border-t-accent bg-panel p-5 shadow-2xl"
             >
               <span className="absolute top-4 right-4 font-display text-2xl text-accent/30">{role.number}</span>
               <div className="mb-3 h-12 w-12 text-accent" aria-hidden="true">
