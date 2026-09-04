@@ -14,7 +14,7 @@ export function Header() {
     <header className="sticky top-0 z-40 bg-ink/95 backdrop-blur-md">
       <div className="mx-auto grid min-h-[78px] w-[min(calc(100%-2rem),1180px)] grid-cols-[1fr_auto] items-center gap-x-4 gap-y-1 py-2 md:grid-cols-[auto_1fr_auto] md:grid-rows-1">
         <a href="#top" className="flex min-w-0 items-center gap-3 text-cream" onClick={close}>
-          <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-lg bg-safety" aria-hidden="true">
+          <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-lg bg-brand" aria-hidden="true">
             <svg viewBox="0 0 48 48" className="h-8 w-8">
               <path
                 fill="#101318"
@@ -36,7 +36,7 @@ export function Header() {
         <nav
           className={`max-md:absolute max-md:top-[86px] max-md:right-3 max-md:left-3 max-md:grid max-md:gap-1 max-md:rounded-xl max-md:border max-md:border-white/10 max-md:bg-panel max-md:p-3 max-md:shadow-2xl ${
             open ? "max-md:opacity-100 max-md:pointer-events-auto" : "max-md:pointer-events-none max-md:opacity-0"
-          } md:flex md:items-center md:gap-5`}
+          } md:flex md:items-center md:gap-4 lg:gap-5`}
           aria-label="Primary"
         >
           <a className="block rounded-lg px-3 py-3 font-semibold text-cream hover:text-safety md:p-0" href="#services" onClick={close}>
@@ -45,11 +45,14 @@ export function Header() {
           <a className="block rounded-lg px-3 py-3 font-semibold text-cream hover:text-safety md:p-0" href="#projects" onClick={close}>
             Projects
           </a>
+          <a className="block rounded-lg px-3 py-3 font-semibold text-cream hover:text-safety md:p-0" href="#careers" onClick={close}>
+            Careers
+          </a>
           <a className="block rounded-lg px-3 py-3 font-semibold text-cream hover:text-safety md:p-0" href="#estimate" onClick={close}>
             Free Estimate
           </a>
           <a
-            className="inline-flex min-h-12 items-center justify-center gap-2 whitespace-nowrap rounded-lg bg-safety px-4 py-2 font-extrabold uppercase tracking-wide text-ink hover:bg-safety-2"
+            className="inline-flex min-h-12 items-center justify-center gap-2 whitespace-nowrap rounded-lg bg-brand px-4 py-2 font-extrabold uppercase tracking-wide text-ink hover:bg-brand-2"
             href={site.phoneTel}
           >
             Call {site.phoneDisplay}

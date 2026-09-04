@@ -1,3 +1,4 @@
+import { Careers } from "@/components/Careers";
 import { EstimateForm } from "@/components/EstimateForm";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
@@ -16,6 +17,7 @@ export default function Home() {
         <Hero />
         <Services />
         <Proof />
+        <Careers />
         <EstimateForm />
       </main>
       <Footer />

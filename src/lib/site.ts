@@ -5,6 +5,28 @@ export const site = {
   phoneDisplay: "[Phone Number]",
   phoneTel: "tel:+15555550100",
   email: "[email@yourbusiness.com]",
+  siteUrl: "https://www.yourbusiness.com",
+  ogImage: "/placeholders/hero.svg",
+  priceRange: "$$",
+  address: {
+    streetAddress: "[Street Address]",
+    addressLocality: "[City]",
+    addressRegion: "[State]",
+    postalCode: "[ZIP]",
+    addressCountry: "US",
+  },
+  openingHours: [
+    {
+      dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      opens: "07:00",
+      closes: "17:00",
+    },
+    {
+      dayOfWeek: ["Saturday"],
+      opens: "08:00",
+      closes: "12:00",
+    },
+  ],
   serviceArea: "[City], [County], & Surrounding Areas",
   serviceAreaShort: "[City] · [County] · Nearby Towns",
   metaTitle: "Your Business Name | [Primary Trade] in [Service Area]",
@@ -20,8 +42,22 @@ export const site = {
     headlineLine2: "[Service Region]",
     subheadline:
       "[Short positioning statement about the crew, specialties, and the type of work you want to win.]",
-    primaryCta: "Call [Phone Number]",
-    secondaryCta: "Get a Free Estimate",
+    primaryCta: "Request a Quote",
+    secondaryCta: "View Our Work",
+    slides: [
+      {
+        src: "/placeholders/hero.svg",
+        alt: "Add a contractor job-site photo here",
+      },
+      {
+        src: "/placeholders/gallery-1.svg",
+        alt: "Add a second hero photo here",
+      },
+      {
+        src: "/placeholders/gallery-2.svg",
+        alt: "Add a third hero photo here",
+      },
+    ],
   },
   trustItems: [
     "[Trust point 01]",
@@ -98,6 +134,40 @@ export const site = {
     ],
     serviceOptions: ["[Service 01]", "[Service 02]", "[Service 03]", "Other"],
     descriptionPlaceholder: "What work needs to be done?",
+  },
+  careers: {
+    eyebrow: "Careers",
+    heading: "Join our crew",
+    lede:
+      "[One sentence about the kind of people you hire, how the crew works, and why someone should apply.]",
+    applyEyebrow: "Apply now",
+    applyHeading: "Ready to get on the crew?",
+    applyLede:
+      "Call the shop or send a short email. Tell us the role you want and where you’ve worked.",
+    callCta: "Call the shop",
+    emailCta: "Email to apply",
+    roles: [
+      {
+        number: "01",
+        title: "Equipment Operator",
+        type: "Full-time",
+        description:
+          "Replace with the machines, job sites, and experience this role needs.",
+      },
+      {
+        number: "02",
+        title: "Service Technician",
+        type: "Full-time",
+        description:
+          "Replace with the service calls, installs, or repairs this role owns.",
+      },
+      {
+        number: "03",
+        title: "[Open Role 03]",
+        type: "Full-time / Seasonal",
+        description: "Replace with another position you hire for, or remove this card.",
+      },
+    ],
   },
   footerBlurb:
     "[One-sentence summary of the business, trades, and service area.]",

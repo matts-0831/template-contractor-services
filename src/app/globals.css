@@ -8,7 +8,10 @@
   --color-muted: #aeb6c0;
   --color-safety: #f5c518;
   --color-safety-2: #ffd54a;
+  --color-brand: var(--color-safety);
+  --color-brand-2: var(--color-safety-2);
   --color-accent: #ff6a1a;
+  --color-accent-2: #ff8138;
   --color-paper: #f6f3ec;
   --color-paper-ink: #161a20;
   --color-danger: #e24a3b;
@@ -18,13 +21,29 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-bottom: var(--mobile-bottom-chrome);
+}
+
+:root {
+  --header-height: 7.25rem;
+  --sticky-call-bar-height: 3.5rem;
+  --hero-dots-space: 2.75rem;
+  --mobile-bottom-chrome: calc(var(--sticky-call-bar-height) + 0.75rem + env(safe-area-inset-bottom, 0px));
 }
 
 body {
-  padding-bottom: 4.75rem;
+  padding-bottom: var(--mobile-bottom-chrome);
 }
 
-@media (min-width: 900px) {
+@media (min-width: 768px) {
+  :root {
+    --header-height: 5.375rem;
+  }
+
+  html {
+    scroll-padding-bottom: 0;
+  }
+
   body {
     padding-bottom: 0;
   }
@@ -45,7 +64,7 @@ h3,
   background: repeating-linear-gradient(
     -55deg,
     #111 0 10px,
-    var(--color-safety) 10px 20px
+    var(--color-brand) 10px 20px
   );
 }
 
@@ -53,4 +72,8 @@ h3,
   html {
     scroll-behavior: auto;
   }
+}
+
+section[id] {
+  scroll-margin-top: var(--header-height);
 }
