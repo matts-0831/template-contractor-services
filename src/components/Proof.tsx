@@ -32,7 +32,7 @@ export function Proof() {
               <img
                 className="aspect-4/3 h-full w-full object-cover lg:aspect-auto"
                 src={site.proof.poster}
-                alt="Add a featured project video or photo here"
+                alt={site.proof.videoLabel}
               />
             )}
             <figcaption className="absolute inset-x-0 bottom-0 bg-linear-to-t from-black/85 to-transparent px-3 py-3 text-sm font-bold">
